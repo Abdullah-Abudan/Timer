@@ -1,0 +1,134 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+section{
+    background: #fff;
+    border: 1px solid #dadce0;
+    border-radius: 8px;
+    padding: 6px 6px 10px;
+    width: 50%;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.part-1 ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    border-bottom: 1px solid #dadce0;
+}
+.part-1 li{
+    width: 50%;
+    padding: 15px 0;
+    position: relative;
+    cursor: pointer;
+}
+.part-1 li>a{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    font-family: arial,sans-serif;
+}
+.part-1 li a span{
+    font-size: 12px;
+}
+.part-1 li a span img{
+    width: 15px;
+    margin-right: 5px;
+}
+.part-1 li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 3px;
+    background-color: #106eea;
+    transition: 0.3s linear;
+}
+.part-1 li:hover::before {
+    width: 100%;
+}
+div.part-2 > div.time-content{
+    margin: 20px 16px;
+    padding: 8px 12px;
+    cursor: pointer;
+    font-size: 24px;
+    outline: none;
+    display: inline-block;
+    color: #222;
+    font-weight: bold;
+    border-bottom: 1px solid #dadce0;
+
+}  
+div.part-2 > div.time-content span{
+    font-family: 'Google Sans',arial,sans-serif;
+    font-weight: 400;
+    font-size: 36px;
+}  
+div.part-2 > div.time-content span sub{
+    font-size: 20px;
+    padding-right: 18px;
+}  
+.btn-audio_Full-content{
+    border-top: 1px solid #dadce0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 16px 0;
+}
+.btn-content #btnStartStop{
+    color: #fff;
+    background-color: #1a73e8;
+    border: 1px solid #1a73e8;
+    text-transform: uppercase;
+    padding: 6px 8px 5px;
+    text-align: center;
+    border-radius: 2px;
+    cursor: pointer;
+    font-size: 11px;
+    font-weight: bold;
+}
+.btn-content #btn-reset{
+    margin-left: 16px;
+    color: #1a73e8;
+    background-color: #fff;
+    border: 1px solid #dadce0;
+    text-transform: uppercase;
+    padding: 6px 8px 5px;
+    text-align: center;
+    border-radius: 2px;
+    cursor: pointer;
+    font-size: 11px;
+    font-weight: bold;
+}
+.audio-full span img{
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+.audio-full span:nth-child(2){
+    margin-left: 12px;
+}
+
+#STOPWATCH{
+    display: none;
+}
+.none{
+    display: none;
+}
+.block{
+    display: block;
+}
+
+.mute{
+    border-top:3px solid #222 ;
+    position: relative;
+    top: 70%;
+}

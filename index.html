@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="dark" />
+    <link rel="stylesheet" href="CSS/style.css" />
+    <title>GoogleTimer</title>
+  </head>
+  <body>
+    <section id="TIMER">
+      <div class="part-1">
+        <ul>
+          <li>
+            <a href="#" id="#">
+              <span> <img src="images/timer.svg" alt="timer" /></span>
+              <span>TIMER</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" id="swapTStop">
+              <span> <img src="images/clock.svg" alt="clock" /></span>
+              <span>STOPWATCH</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="part-2">
+        <div class="time-content">
+          <span id="minutes"></span>
+          <span><sub>m</sub></span>
+          <span id="seconds"></span>
+          <span><sub>s</sub></span>
+        </div>
+
+        <div class="btn-audio_Full-content">
+          <div class="btn-content">
+            <button type="button" id="btnStartStop">
+              <span id="btn-start" onclick="CountDown(timer)">start</span>
+              <span id="btn-stop">stop</span>
+            </button>
+            <button type="button" id="btn-reset" onclick="CountDown(300)">
+              reset
+            </button>
+          </div>
+
+          <div class="audio-full">
+            <span id="mute"><img src="images/audio.png" alt="audio" /></span>
+            <span><img src="images/full.png" alt="full" /></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="STOPWATCH">
+      <div class="part-1">
+        <ul>
+          <li>
+            <a href="#" id="swapTTimer">
+              <span> <img src="images/timer.svg" alt="timer" /></span>
+              <span>TIMER</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" id="#">
+              <span> <img src="images/clock.svg" alt="clock" /></span>
+              <span>STOPWATCH</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="part-2">
+        <div class="time-content">
+          <span id="Second-part-2">0</span>
+          <span><sub>s</sub></span>
+          <span id="Mile-second">00</span>
+        </div>
+        <div class="btn-audio_Full-content">
+          <div class="btn-content">
+            <button type="button" id="btnStartStop">
+              <span id="btn-start-1" onclick="countDown(timeToSeconds)"
+                >start</span
+              >
+              <span id="btn-stop-1">stop</span>
+            </button>
+
+            <button type="button" id="btn-reset" onclick="countDown(0.1)">
+              reset
+            </button>
+          </div>
+          <div class="audio-full">
+            <span><img src="images/full.png" alt="full" /></span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="JS/main.js"></script>
+  </body>
+</html>
